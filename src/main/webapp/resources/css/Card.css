@@ -1,0 +1,28 @@
+
+* {
+    margin: 0;
+}
+.card{
+    margin-top: 2px;
+    width: 250px;
+    max-height: 400px;
+    background-color:  rgba(0, 0, 0, 0.5);
+    color: floralwhite;
+    display: inline-block;
+}
+.cardImage{
+    height: 200px;
+    width: 250px;
+    text-align: center;
+}
+.cardInfo{
+    margin-top: 2px;
+    margin-left: 5px;
+    height: 100%;
+    max-width: 200px;
+    word-break: break-all;
+
+}
+.carcost{
+    color: goldenrod;
+}

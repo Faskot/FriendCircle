@@ -1,0 +1,105 @@
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid white;
+    color: lemonchiffon;
+}
+h2{
+    color: floralwhite;
+}
+.usrname{
+    color: floralwhite;
+    margin-left: 15px;
+}
+.brand{
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: left;
+
+}
+.cartable{
+    background-color:  rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+}
+.cardblock{
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: inline-block;
+}
+.table-car{
+    font-size: 20px;
+    width: 600px;
+}
+.btn{
+    height: 50px;
+    width: 150px;
+    background-color: brown;
+    font-size: 20px;
+    color: floralwhite;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    margin: 5px 5px;
+}
+.adminbtn{
+    height: 50px;
+    width: 200px;
+    background-color: brown;
+    font-size: 20px;
+    color: floralwhite;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    margin: 5px 5px;
+}
+.minbtn{
+    height: 30px;
+    width: 75px;
+    background-color: brown;
+    font-size: 10px;
+    color: floralwhite;
+    border: none;
+    text-align: center;
+}
+
+.regbtn{
+    height: 30px;
+    width: 100px;
+    background-color: brown;
+    font-size: 10px;
+    color: floralwhite;
+    border: none;
+    text-align: center;
+    margin-bottom: 2px;
+}
+button:hover{
+    background-color: darkred;
+}
+.menu{
+    height: 60px;
+    background-color:  rgba(0, 0, 0, 0.5);
+    margin-top: 2px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+body{
+    background-image: url(../Image/background.png);
+    background-repeat: space;
+}
+input{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    line-height: 20px;
+    text-decoration: none; /* remove underline from anchors */
+}
+.regblock,.logblock,.editCar{
+width: 400px;
+}
