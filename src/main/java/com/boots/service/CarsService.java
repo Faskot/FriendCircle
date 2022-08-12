@@ -43,5 +43,11 @@ public class CarsService {
                 .setParameter("paramId", idMin).getResultList();
     }
 
+    public List<Cars> listAll(String keyword) {
+        if (keyword != null) {
+            return carsRepository.search(keyword);
+        }
+        return carsRepository.findAll();
+    }
 
 }

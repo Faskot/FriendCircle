@@ -33,9 +33,36 @@
   </sec:authorize>
 </div>
 
+<div class="searchblock">
+  <form:form method = "POST" modelAttribute="keyword" >
+  <div>
+    <form:input type="text" path="brand" placeholder="Brand"
+                autofocus="true"></form:input>
+  </div>
+  <div>
+    <form:input type="text" path="model" placeholder="Model"
+                autofocus="true"></form:input>
+  </div>
+  <div>
+    <form:input type="text" path="year" placeholder="Year"
+                autofocus="true"></form:input>
+  </div>
+  <div>
+    <form:input type="text" path="color" placeholder="Color"
+                autofocus="true"></form:input>
+  </div>
+  <div>
+    <form:input type="text" path="cost" placeholder="Cost"
+                autofocus="true"></form:input>
+  </div>
+  <button class="regbtn" type="submit">Пошук</button>
+  </form:form>
+</div>
+
+
+<div class="mainbox">
 
   <c:forEach items="${allCars}" var="cars">
-    <div class="cardblock">
   <div class="card">
 <div >
 <img class = "cardImage" src =../../resources/Image/img.png>
@@ -48,8 +75,9 @@
   <h2 class="carcost">${cars.cost}</h2>
 </div>
   </div>
-    </div>
-  </c:forEach>
+      </c:forEach>
+</div>
+
 
 
 </body>
