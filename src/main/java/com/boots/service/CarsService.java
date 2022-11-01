@@ -19,7 +19,6 @@ public class CarsService {
     CarsRepository carsRepository;
 
     public List<Cars> allCars() {
-
         return carsRepository.findAll();
     }
 

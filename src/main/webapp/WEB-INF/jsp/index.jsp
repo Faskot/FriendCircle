@@ -1,3 +1,4 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
@@ -34,34 +35,13 @@
 </div>
 
 <div class="searchblock">
-  <form:form method = "POST" modelAttribute="keyword" >
-  <div>
-    <form:input type="text" path="brand" placeholder="Brand"
-                autofocus="true"></form:input>
-  </div>
-  <div>
-    <form:input type="text" path="model" placeholder="Model"
-                autofocus="true"></form:input>
-  </div>
-  <div>
-    <form:input type="text" path="year" placeholder="Year"
-                autofocus="true"></form:input>
-  </div>
-  <div>
-    <form:input type="text" path="color" placeholder="Color"
-                autofocus="true"></form:input>
-  </div>
-  <div>
-    <form:input type="text" path="cost" placeholder="Cost"
-                autofocus="true"></form:input>
-  </div>
-  <button class="regbtn" type="submit">Пошук</button>
-  </form:form>
+
+
+  <button class="searchbtn" type="submit">Пошук</button>
 </div>
 
 
 <div class="mainbox">
-
   <c:forEach items="${allCars}" var="cars">
   <div class="card">
 <div >

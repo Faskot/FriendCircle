@@ -17,10 +17,9 @@ public class SearchController {
     private CarsService carsService;
 
     @RequestMapping("/")
-    public String viewHomePage(Model model, @Param("keyword") String keyword) {
-        List<Cars> listProducts = carsService.listAll(keyword);
-        model.addAttribute("listProducts", listProducts);
-        model.addAttribute("keyword", keyword);
+        public String carsList(Model model, @Param("keyword") String keyword) {
+            model.addAttribute("allCars", carsService.allCars());
+            model.addAttribute("keyword", keyword);
 
         return "index";
     }

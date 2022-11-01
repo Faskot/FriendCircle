@@ -10,10 +10,9 @@ import javax.persistence.*;
 @Data
 @Table(name = "t_cars")
 public class Cars {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-   private Long id;
+    private Long id;
 
     private String brand;
     private String model;

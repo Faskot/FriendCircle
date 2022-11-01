@@ -15,9 +15,9 @@ public class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    @Size(min=2, message = "Не менше 5 знаків")
+    @Size(min=2, message = "At least 5 characters")
     private String username;
-    @Size(min=2, message = "Не менше 5 знаків")
+    @Size(min=2, message = "At least 5 characters")
     private String password;
     @Transient
     private String passwordConfirm;

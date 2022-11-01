@@ -18,6 +18,7 @@
     <a onclick="window.location.href = '/'"><img  src = "../../resources/Image/Brand.png"/></a>
 </div>
 <div class="editCar">
+    <h2>Додати авто</h2>
     <form:form method = "POST" modelAttribute="carsForm" >
             <div>
             <form:input type="text" path="brand" placeholder="Brand"
