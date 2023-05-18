@@ -10,8 +10,9 @@
 </head>
 
 <body>
+
 <div class = "brand">
-  <a onclick="window.location.href = '/'"><img  src = "../../resources/Image/Brand.png"/></a>
+  <a class="brandimage" onclick="window.location.href = '../..'"><img src = "../../resources/Image/brand.png"/></a>
 </div>
 <div>
   <table>
@@ -19,13 +20,24 @@
     <th>ID</th>
     <th>UserName</th>
     <th>Password</th>
+    <th>Ім'я</th>
+    <th>Прізвище</th>
+    <th>Вік</th>
+    <th>Місто</th>
+    <th>Телеграм або інший спосіб зв'язку:</th>
     <th>Roles</th>
+
     </thead>
     <c:forEach items="${allUsers}" var="user">
       <tr>
         <td>${user.id}</td>
         <td>${user.username}</td>
         <td>${user.password}</td>
+        <td>${user.firstName}</td>
+        <td>${user.lastName}</td>
+        <td>${user.age}</td>
+        <td>${user.city}</td>
+        <td>${user.teleg}</td>
         <td>
           <c:forEach items="${user.roles}" var="role">${role.name}; </c:forEach>
         </td>
@@ -35,11 +47,11 @@
             <input type="hidden" name="action" value="delete"/>
             <button class="btn" type="submit">Delete</button>
           </form>
-
         </td>
       </tr>
     </c:forEach>
   </table>
+  <button class= "btn" onclick=" window.location.href = '../..'">Головна</button>
 </div>
 </body>
 </html>

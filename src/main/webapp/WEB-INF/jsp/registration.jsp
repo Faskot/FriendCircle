@@ -12,29 +12,31 @@
 
 <body>
 <div class = "brand">
-  <a onclick="window.location.href = '/'"><img  src = "../../resources/Image/Brand.png"/></a>
+  <a onclick="window.location.href = '../..'"><img src = "../../resources/Image/brand.png"/></a>
 </div>
 <div class ="regblock">
   <form:form method="POST" action="/registration"  modelAttribute="userForm">
     <h2>Реєстрація</h2>
     <div>
-      <form:input type="text" path="username" placeholder="Username"
+      <form:input type="text" path="username" placeholder="Логін"
                   autofocus="true"></form:input>
 
       <form:errors path="username"></form:errors>
         ${usernameError}
     </div>
     <div>
-      <form:input type="password" path="password" placeholder="Password"></form:input>
+      <form:input type="password" path="password" placeholder="Пароль"></form:input>
     </div>
     <div>
       <form:input type="password" path="passwordConfirm"
-                  placeholder="Confirm your password"></form:input>
+                  placeholder="Повторіть пароль"></form:input>
       <form:errors path="password"></form:errors>
         ${passwordError}
     </div>
     <button class="regbtn" type="submit">Зареєструватися</button>
   </form:form>
+  <button class= "regbtn" onclick=" window.location.href = '/'">Головна</button>
 </div>
+
 </body>
 </html>

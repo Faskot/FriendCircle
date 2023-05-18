@@ -19,6 +19,19 @@ public class User implements UserDetails {
     private String username;
     @Size(min=2, message = "At least 5 characters")
     private String password;
+    @Size(min=2, message = "At least 5 characters")
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String phoneNumber;
+    private String age;
+    private String city;
+    private String region;
+    private String want;
+    private String about;
+    private String teleg;
+    @Lob
+    private byte[] avatar;
     @Transient
     private String passwordConfirm;
     @ManyToMany(fetch = FetchType.EAGER)

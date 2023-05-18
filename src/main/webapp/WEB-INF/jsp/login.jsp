@@ -11,7 +11,7 @@
 
 <body>
 <div class = "brand">
-  <a onclick="window.location.href = '/'"><img  src = "../../resources/Image/Brand.png"/></a>
+  <a onclick="window.location.href = '../..'"><img src = "../../resources/Image/brand.png"/></a>
 </div>
 <sec:authorize access="isAuthenticated()">
   <% response.sendRedirect("/"); %>
@@ -24,9 +24,9 @@
              autofocus="true"/></br>
       <input name="password" type="password" placeholder="Password"/>
       <button class= "minbtn" type="submit">Ввійти</button>
-      <button class= "minbtn" onclick=" window.location.href = '/registration' ">Реєстрація</button>
     </div>
   </form>
+  <button class= "minbtn" onclick=" window.location.href = '/registration'">Реєстрація</button>
 </div>
 
 </body>

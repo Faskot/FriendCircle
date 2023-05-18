@@ -31,10 +31,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                     //For not reg user
                     .antMatchers("/registration").not().fullyAuthenticated()
                     //For user with role "ADMIN"
-                    .antMatchers("/edit","carlist","/admin/**").hasRole("ADMIN")
-                    .antMatchers("/forum").hasRole("USER")
+                    .antMatchers("/admin/**").hasRole("ADMIN")
+                    .antMatchers("/cabinet","/about").hasRole("USER")
                     //Acces for anyone
-                    .antMatchers("/", "/resources/**").permitAll()
+                    .antMatchers("/","/**").permitAll()
                 //Pages need authentication
                 .anyRequest().authenticated()
                 .and()
